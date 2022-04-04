@@ -5,9 +5,6 @@
 int main(int argc, char** argv) {
 	
 	Perceptron P;
-	
-	P.initialise();
-	P.train();
 	P.display();
 	
 	return 0;
