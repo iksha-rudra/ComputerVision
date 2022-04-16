@@ -5,14 +5,12 @@ class Perceptron
 {
 	float w1,w2,theta;
 	
-	int **X;
-	int *Y;
+	int X[4][2];
+	int Y[4];
 	
 	public:
 		Perceptron();
 		
-		int random(int min, int max);
-		float getRandom();
 		void initialise();
 		void train();
 		int threshold(float y);

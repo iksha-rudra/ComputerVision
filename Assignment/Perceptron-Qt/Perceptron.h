@@ -3,17 +3,17 @@
 
 class Perceptron
 {
-	float w1,w2,theta;
+    float w1,w2,theta;
 	
-	int **X;
-	int *Y;
+    int X[4][3];
+    int Y[4];
 	
 	public:
-		Perceptron();
+        Perceptron();
 		
 		int random(int min, int max);
 		float getRandom();
-		void initialise();
+        void initialise(int Y[4]);
 		void train();
 		int threshold(float y);
 		void display();
